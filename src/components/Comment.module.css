@@ -4,12 +4,11 @@
   gap: 1rem;
 }
 
-.comment img {
+.comment>img {
   box-sizing: initial;
   width: 3rem;
   height: 3rem;
   border-radius: 8px;
-  margin-right: 1rem;
 }
 
 .commentBox {
@@ -24,7 +23,7 @@
 
 .commentContent header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -52,4 +51,26 @@
 
 .commentContent header button:hover {
   color: var(--red-500);
+}
+
+.commentContent p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.commentBox footer {
+  margin-top: 1rem;
+}
+
+.commentBox footer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.commentBox footer button:hover {
+  color: var(--green-300);
 }
